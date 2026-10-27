@@ -1,13 +1,20 @@
 import React from "react";
-import BannerPage from "./portfolio/Banner";
- 
+import Banner from "./portfolio/Banner";
 
 export default function PortfolioPage() {
   return (
-    <div className="min-h-screen bg-[#05070d] p-4 md:p-8">
-      <div className="mx-auto max-w-6xl rounded-[2.5rem] border border-white/5 bg-[#0b1120] px-6 py-6 shadow-2xl md:px-10 md:py-8">
-         
-        <BannerPage/>
+    <div
+      className="min-h-screen p-4 transition-colors duration-300 md:p-8"
+      style={{ backgroundColor: "var(--page-bg)" }}
+    >
+      <div
+        className="mx-auto mt-20 max-w-6xl rounded-[2.5rem] border px-6 py-6 shadow-2xl transition-colors duration-300 md:px-10 md:py-8"
+        style={{
+          backgroundColor: "var(--section-bg)",
+          borderColor: "var(--border-color)",
+        }}
+      >
+        <Banner />
       </div>
     </div>
   );

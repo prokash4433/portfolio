@@ -1,5 +1,49 @@
+ 
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Dark Theme - Default */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --page-bg: #070719;
+  --section-bg: #101735;
+  
+  --text-color: #ffffff;
+  --muted-text: #c0c5d9;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Light Theme */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --page-bg: #f4f6fc;
+  --section-bg: #ffffff;
+  --card-bg: #e9edfa;
+  --text-color: #171b2e;
+  --muted-text: #505a72;
+  --border-color: rgba(20, 30, 60, 0.15);
+}
+
+/* Global Background and Text */
+html,
+body {
+  min-height: 100%;
+  background-color: var(--page-bg);
+  color: var(--text-color);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Smooth Theme Transition */
+body {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
  

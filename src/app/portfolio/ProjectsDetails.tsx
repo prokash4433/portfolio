@@ -25,7 +25,7 @@ export default function ProjectsDetails({ project }: { project: Project }) {
                               {/* Back Link */}
                               <Link
                                         href="/#projects"
-                                        className="inline-flex items-center gap-2 text-sm font-semibold transition hover:opacity-80"
+                                        className="inline-flex items-center gap-2 text-xl font-semibold transition hover:opacity-80"
                                         style={{ color: "var(--accent-color)" }}
                               >
                                         &larr; Back to projects
@@ -97,7 +97,7 @@ export default function ProjectsDetails({ project }: { project: Project }) {
                               </div>
 
                               {/* Description */}
-                              <DetailHeading>Description</DetailHeading>
+                              <DetailHeading >Description</DetailHeading>
 
                               <p
                                         className="mt-3 text-sm leading-7"

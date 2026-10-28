@@ -2,7 +2,7 @@ import Banner from "./portfolio/Banner";
 import AboutMe from "./portfolio/AboutMe";
 import Skills from "./portfolio/Skills";
 import Education from "./portfolio/Education";
-import SelfEmployed from "./portfolio/SelfEmployed";
+ 
 import Projects from "./portfolio/Projects";
 import Contact from "./portfolio/Contact";
 
@@ -33,15 +33,12 @@ export default function PortfolioPage() {
 
         {/* Education Section */}
 
-        <section>
+        <section id="education"
+        className="scroll-mt-20">
           <Education/>
         </section>
 
-        {/* Self-Employed Section */}
-
-        <section>
-           <SelfEmployed/>
-        </section>
+         
 
       {/* Projects Section */}
       <section id="projects" className="bg-transparent">
@@ -50,7 +47,8 @@ export default function PortfolioPage() {
 
       {/* Contact Section */}
 
-      <section>
+      <section id="contact"
+      className="scroll-mt-20">
         <Contact/>
       </section>
 

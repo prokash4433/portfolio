@@ -6,6 +6,7 @@ import "./globals.css";
 
 import Navbar from "./portfolio/Navbar";
 import { ThemeProvider } from "./ThemeProvider";
+import Footer from "./portfolio/Footer";
 
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
@@ -37,7 +38,14 @@ export default function RootLayout({
         <ThemeProvider>
           <Navbar />
 
-          <main className="flex-1">{children}</main>
+          <main className="flex-1">{children}
+
+          </main>
+           <section id="footer"
+           className="scroll-mt-20">
+            <Footer />
+           </section>
+          
         </ThemeProvider>
       </body>
     </html>

@@ -4,6 +4,7 @@ import Skills from "./portfolio/Skills";
 import Education from "./portfolio/Education";
 import SelfEmployed from "./portfolio/SelfEmployed";
 import Projects from "./portfolio/Projects";
+import Contact from "./portfolio/Contact";
 
 export default function PortfolioPage() {
   return (
@@ -45,6 +46,12 @@ export default function PortfolioPage() {
       {/* Projects Section */}
       <section id="projects" className="bg-transparent">
         <Projects />
+      </section>
+
+      {/* Contact Section */}
+
+      <section>
+        <Contact/>
       </section>
 
       {/* Add More Sections Here */}

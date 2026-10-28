@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="A fluffy ginger cat lying down">
+  <rect width="800" height="500" fill="#ffffff"/>
+
+  <!-- soft floor shadow -->
+  <ellipse cx="410" cy="400" rx="250" ry="26" fill="#d9c7a8" opacity="0.5"/>
+
+  <!-- tail curling to the left -->
+  <path d="M212 356 q-80 12 -96 -44 q-12 -44 30 -60" stroke="#e59a45" stroke-width="34" fill="none" stroke-linecap="round"/>
+  <g stroke="#cf7a25" stroke-width="10" stroke-linecap="round" opacity="0.85">
+    <path d="M170 352 l-6 -24"/>
+    <path d="M132 330 l-18 -14"/>
+    <path d="M120 288 l-22 -2"/>
+  </g>
+
+  <!-- body -->
+  <path d="M240 372 q-16 -88 78 -116 q96 -30 178 -6 q96 28 84 112 q-6 40 -54 44 q-140 12 -232 2 q-48 -6 -54 -36 z" fill="#f0b266"/>
+
+  <!-- body stripes -->
+  <g stroke="#dd8f38" stroke-width="12" stroke-linecap="round" opacity="0.8">
+    <path d="M318 268 q6 26 2 50"/>
+    <path d="M372 258 q6 30 2 56"/>
+    <path d="M428 258 q6 30 2 56"/>
+    <path d="M482 266 q6 26 2 50"/>
+  </g>
+
+  <!-- chest / belly -->
+  <ellipse cx="392" cy="372" rx="118" ry="42" fill="#ffe9cd"/>
+
+  <!-- front paws -->
+  <ellipse cx="330" cy="398" rx="42" ry="20" fill="#ffe9cd"/>
+  <ellipse cx="430" cy="400" rx="42" ry="20" fill="#ffe9cd"/>
+  <g stroke="#e8b98a" stroke-width="4" stroke-linecap="round">
+    <path d="M318 388 l0 14"/>
+    <path d="M334 386 l0 16"/>
+    <path d="M350 388 l0 14"/>
+    <path d="M418 390 l0 14"/>
+    <path d="M434 388 l0 16"/>
+    <path d="M450 390 l0 14"/>
+  </g>
+
+  <!-- head -->
+  <circle cx="524" cy="272" r="86" fill="#f0b266"/>
+
+  <!-- ears -->
+  <path d="M462 220 l-18 -62 l62 26 z" fill="#f0b266"/>
+  <path d="M586 220 l18 -62 l-62 26 z" fill="#f0b266"/>
+  <path d="M468 214 l-10 -38 l38 16 z" fill="#f6c9a0"/>
+  <path d="M580 214 l10 -38 l-38 16 z" fill="#f6c9a0"/>
+
+  <!-- head stripes -->
+  <g stroke="#dd8f38" stroke-width="10" stroke-linecap="round" opacity="0.8">
+    <path d="M524 196 l0 -20"/>
+    <path d="M498 202 l-8 -18"/>
+    <path d="M550 202 l8 -18"/>
+  </g>
+
+  <!-- muzzle -->
+  <ellipse cx="524" cy="300" rx="46" ry="30" fill="#ffe9cd"/>
+
+  <!-- closed happy eyes -->
+  <path d="M486 262 q12 -14 24 0" stroke="#5b3a1e" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M538 262 q12 -14 24 0" stroke="#5b3a1e" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- nose + mouth -->
+  <path d="M516 290 l16 0 l-8 10 z" fill="#e77e8c"/>
+  <path d="M524 300 q-10 12 -20 4" stroke="#5b3a1e" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M524 300 q10 12 20 4" stroke="#5b3a1e" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- tongue licking nose -->
+  <path d="M512 306 q12 22 26 4 q-6 -14 -26 -4 z" fill="#f28e9b"/>
+
+  <!-- whiskers -->
+  <g stroke="#c9a273" stroke-width="4" stroke-linecap="round">
+    <path d="M478 296 l-38 -8"/>
+    <path d="M478 308 l-36 6"/>
+    <path d="M570 296 l38 -8"/>
+    <path d="M570 308 l36 6"/>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="A woven basket full of fresh fruit">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f9e56"/>
+      <stop offset="1" stop-color="#7ac943"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="400" cy="420" rx="185" ry="24" fill="#123d20" opacity="0.28"/>
+
+  <!-- grapes (left) -->
+  <g fill="#7b3fa0">
+    <circle cx="292" cy="316" r="17"/>
+    <circle cx="320" cy="316" r="17"/>
+    <circle cx="306" cy="338" r="17"/>
+    <circle cx="278" cy="338" r="17"/>
+    <circle cx="334" cy="338" r="15"/>
+    <circle cx="292" cy="358" r="15"/>
+    <circle cx="320" cy="358" r="15"/>
+    <circle cx="306" cy="376" r="13"/>
+  </g>
+  <path d="M306 300 q6 -22 24 -28" stroke="#4d7c2f" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="336" cy="272" rx="16" ry="9" fill="#5fa03a" transform="rotate(-20 336 272)"/>
+
+  <!-- red apple -->
+  <circle cx="372" cy="318" r="40" fill="#e0453a"/>
+  <path d="M372 282 q4 -18 18 -24" stroke="#6b4226" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="396" cy="268" rx="16" ry="9" fill="#5fa03a" transform="rotate(-25 396 268)"/>
+  <ellipse cx="358" cy="304" rx="10" ry="14" fill="#ff8a75" opacity="0.7" transform="rotate(-25 358 304)"/>
+
+  <!-- green apple -->
+  <circle cx="438" cy="312" r="43" fill="#8cc63f"/>
+  <path d="M438 272 q3 -16 15 -22" stroke="#6b4226" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="459" cy="259" rx="16" ry="9" fill="#5fa03a" transform="rotate(-25 459 259)"/>
+  <ellipse cx="422" cy="296" rx="11" ry="15" fill="#c7e596" opacity="0.8" transform="rotate(-25 422 296)"/>
+
+  <!-- tomato / persimmon (right) -->
+  <circle cx="500" cy="330" r="34" fill="#f28c28"/>
+  <g fill="#5fa03a">
+    <path d="M500 296 l-12 -12 l6 16 z"/>
+    <path d="M500 296 l12 -12 l-6 16 z"/>
+    <path d="M500 296 l-16 -4 l14 10 z"/>
+    <path d="M500 296 l16 -4 l-14 10 z"/>
+  </g>
+  <ellipse cx="488" cy="318" rx="8" ry="11" fill="#ffc37a" opacity="0.8" transform="rotate(-25 488 318)"/>
+
+  <!-- small purple plum tucked in front -->
+  <circle cx="345" cy="372" r="22" fill="#9a4fc4"/>
+  <ellipse cx="338" cy="364" rx="6" ry="8" fill="#d3a3ec" opacity="0.8" transform="rotate(-25 338 364)"/>
+
+  <!-- basket -->
+  <path d="M252 344 L548 344 L516 424 Q400 452 284 424 Z" fill="#a9662e"/>
+  <path d="M252 344 L548 344 L544 368 L256 368 Z" fill="#8a4f20"/>
+  <g stroke="#7c451c" stroke-width="5" opacity="0.75">
+    <path d="M300 368 L292 428"/>
+    <path d="M350 368 L346 436"/>
+    <path d="M400 368 L400 440"/>
+    <path d="M450 368 L454 436"/>
+    <path d="M500 368 L508 428"/>
+  </g>
+  <g stroke="#c88345" stroke-width="4" opacity="0.6">
+    <path d="M266 392 Q400 414 534 392"/>
+    <path d="M276 412 Q400 434 524 412"/>
+  </g>
+</svg>

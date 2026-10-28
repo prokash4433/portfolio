@@ -1,3 +1,4 @@
+
 import {
           FaHtml5,
           FaReact,
@@ -100,8 +101,8 @@ const Skills = () => {
 
                                         {/* Skills Cards */}
                                         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-9">
-                    {/* Frontend Card */}
-<div className="rounded-[23px] border border-[var(--border-color)] bg-[var(--card-bg)] px-5 py-5 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]">
+                                                  {/* Frontend Card */}
+                                                  <div className="rounded-[23px] border border-[var(--border-color)] bg-[var(--card-bg)] px-5 py-5 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-[transform,box-shadow] duration-200 ease-out hover:scale-[1.01] hover:shadow-[0_0_35px_rgba(139,92,246,0.25)] motion-reduce:transform-none motion-reduce:transition-none">
                                                             <h3 className="mb-5 text-center text-[28px] font-bold text-[var(--heading-color)]">
                                                                       Frontend
                                                             </h3>
@@ -112,7 +113,9 @@ const Skills = () => {
                                                                                           key={skill.name}
                                                                                           className="flex min-h-[50px] items-center justify-center gap-3 rounded-[14px] border border-[var(--border-color)] bg-[var(--chip-bg)] px-4 py-3 transition-all duration-300 hover:border-[var(--accent-color)] hover:brightness-95"
                                                                                 >
-                                                                                          {skill.icon}
+                                                                                          <span className="inline-flex shrink-0 transition-transform duration-200 ease-out hover:scale-110 motion-reduce:transform-none motion-reduce:transition-none">
+                                                                                                    {skill.icon}
+                                                                                          </span>
 
                                                                                           <span className="whitespace-nowrap text-[15px] text-[var(--muted-text)] sm:text-base">
                                                                                                     {skill.name}
@@ -122,19 +125,21 @@ const Skills = () => {
                                                             </div>
                                                   </div>
 
-          {/* Backend Card */}
-          <div className="rounded-[23px] border border-[var(--border-color)] bg-[var(--card-bg)] px-5 py-5 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)] sm:px-8 sm:py-6">
-          <h3 className="mb-5 text-center text-[28px] font-bold text-[var(--heading-color)]">
-          Backend
-          </h3>
+                                                  {/* Backend Card */}
+                                                  <div className="rounded-[23px] border border-[var(--border-color)] bg-[var(--card-bg)] px-5 py-5 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-[transform,box-shadow] duration-200 ease-out hover:scale-[1.01] hover:shadow-[0_0_35px_rgba(139,92,246,0.25)] motion-reduce:transform-none motion-reduce:transition-none sm:px-8 sm:py-6">
+                                                            <h3 className="mb-5 text-center text-[28px] font-bold text-[var(--heading-color)]">
+                                                                      Backend
+                                                            </h3>
 
-          <div className="mx-auto flex max-w-[440px] flex-wrap justify-center gap-[14px]">
-          {backendSkills.map((skill) => (
+                                                            <div className="mx-auto flex max-w-[440px] flex-wrap justify-center gap-[14px]">
+                                                                      {backendSkills.map((skill) => (
                                                                                 <div
                                                                                           key={skill.name}
                                                                                           className="flex min-h-[50px] items-center justify-center gap-3 rounded-[14px] border border-[var(--border-color)] bg-[var(--chip-bg)] px-4 py-3 transition-all duration-300 hover:border-[var(--accent-color)] hover:brightness-95"
                                                                                 >
-                                                                                          {skill.icon}
+                                                                                          <span className="inline-flex shrink-0 transition-transform duration-200 ease-out hover:scale-110 motion-reduce:transform-none motion-reduce:transition-none">
+                                                                                                    {skill.icon}
+                                                                                          </span>
 
                                                                                           <span className="whitespace-nowrap text-[15px] text-[var(--muted-text)] sm:text-base">
                                                                                                     {skill.name}

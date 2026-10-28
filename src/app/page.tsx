@@ -2,6 +2,8 @@ import Banner from "./portfolio/Banner";
 import AboutMe from "./portfolio/AboutMe";
 import Skills from "./portfolio/Skills";
 import Education from "./portfolio/Education";
+import SelfEmployed from "./portfolio/SelfEmployed";
+import Projects from "./portfolio/Projects";
 
 export default function PortfolioPage() {
   return (
@@ -34,12 +36,19 @@ export default function PortfolioPage() {
           <Education/>
         </section>
 
-      {/* Add More Sections Here */}
-      {/*
-        <section id="projects">
-          <Projects />
+        {/* Self-Employed Section */}
+
+        <section>
+           <SelfEmployed/>
         </section>
 
+      {/* Projects Section */}
+      <section id="projects" className="bg-transparent">
+        <Projects />
+      </section>
+
+      {/* Add More Sections Here */}
+      {/*
         <section id="contact">
           <Contact />
         </section>

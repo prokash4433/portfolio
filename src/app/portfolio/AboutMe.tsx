@@ -1,41 +1,45 @@
-
 const AboutMePage = () => {
+          const hobbies: string[] = [
+                    "🏏 Cricket",
+                    "🎬 Movie",
+                    "⚽ Football",
+                    "✈️ Travel",
+                    "🍵 Coffee lover",
+                    "🚢 Ship Design",
+          ];
+
           return (
                     <section
                               id="about"
                               className="mt-10 w-full px-5 pt-6 pb-6 transition-colors duration-300 sm:px-8 lg:px-10"
                               style={{ color: "var(--text-color)" }}
                     >
-          <div className="mx-auto w-full max-w-[1200px]">
-                   {/* Section Heading */}
+                    <div className="mx-auto w-full max-w-[1200px]">
+                    {/* Section Heading */}
           <div className="mb-8 text-center">
           <h1
           className="text-[30px] font-bold leading-tight"
-          style={{ color: "var(--heading-color)" }}
-          >
+          style={{ color: "var(--heading-color)" }}>
           About Me
-          </h1>
-
-          <p
+          </h1><p
           className="mt-3 text-[15px]"
-          style={{ color: "var(--muted-text)" }}
-          >
+          style={{ color: "var(--muted-text)" }}>
           A little about my journey and who I am
-          </p>
-          </div>
+                                                  </p>
+                                        </div>
 
-                    {/* Main Content */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-[2fr_1fr]">
-                    {/* About Me Card */}
-          <div
-          className="rounded-2xl border p-10 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
-          style={{
-          borderColor: "var(--border-color)",
-          backgroundColor: "var(--card-bg)",
-          }}
-          >
-          <p
-           className="mb-5 text-[15px] leading-[26px]"
+                                        {/* Main Content */}
+                                        <div className="grid grid-cols-1 gap-6 md:grid-cols-[2fr_1fr]">
+                                                  {/* About Me Card */}
+                                                  <div
+                                                            className="rounded-2xl border p-10 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
+                                                            style={{
+                                                                      borderColor: "var(--border-color)",
+                                                                      backgroundColor: "var(--card-bg)",
+                                                            }}
+                                                  >
+                                                            <p
+                                                                      className="mb-5 text-[15px] leading-[26px]"
                                                                       style={{ color: "var(--text-color)" }}
                                                             >
                                                                       <strong
@@ -84,9 +88,9 @@ const AboutMePage = () => {
                                                             </p>
                                                   </div>
 
-{/* Quick Facts Card */}
+                                                  {/* Quick Facts Card */}
                                                   <div
-                                                            className="rounded-2xl border gap-4 p-10 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
+                                                            className="gap-4 rounded-2xl border p-10 shadow-[0_0_25px_rgba(139,92,246,0.15)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(139,92,246,0.25)]"
                                                             style={{
                                                                       borderColor: "var(--border-color)",
                                                                       backgroundColor: "var(--card-bg)",
@@ -101,14 +105,7 @@ const AboutMePage = () => {
 
                                                             {/* Hobby Tags */}
                                                             <div className="flex flex-wrap gap-1.5">
-                                                                      {[
-                                                                                "🏏 Cricket",
-                                                                                "🎬 Movie",
-                                                                                "⚽ Football",
-                                                                                "✈️ Travel",
-                                                                                "🍵 Coffee lover",
-                                                                                "🚢 Ship Design",
-                                                                      ].map((hobby) => (
+                                                                      {hobbies.map((hobby: string) => (
                                                                                 <span
                                                                                           key={hobby}
                                                                                           className="rounded-full border px-4 py-1.5 text-[13px] transition-colors duration-300"

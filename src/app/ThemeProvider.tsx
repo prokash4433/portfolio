@@ -1,4 +1,3 @@
-
 "use client";
 
 import {
@@ -18,7 +17,11 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
+export function ThemeProvider({
+  children,
+}: {
+  children: ReactNode;
+}): React.JSX.Element {
   const [theme, setTheme] = useState<Theme>("dark");
   const [mounted, setMounted] = useState(false);
 
@@ -42,7 +45,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("theme", theme);
   }, [theme, mounted]);
 
-  function toggleTheme() {
+  function toggleTheme(): void {
     setTheme((currentTheme) =>
       currentTheme === "dark" ? "light" : "dark"
     );
@@ -55,7 +58,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   );
 }
 
-export function useTheme() {
+export function useTheme(): ThemeContextType {
   const context = useContext(ThemeContext);
 
   if (!context) {

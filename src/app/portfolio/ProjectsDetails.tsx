@@ -1,5 +1,3 @@
- 
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +6,11 @@ import { FiExternalLink } from "react-icons/fi";
 
 import type { Project } from "@/lib/projects";
 
-function DetailHeading({ children }: { children: React.ReactNode }) {
+function DetailHeading({
+          children,
+}: {
+          children: React.ReactNode;
+}): React.JSX.Element {
           return (
                     <h2
                               className="mt-10 text-base font-bold"
@@ -19,7 +21,11 @@ function DetailHeading({ children }: { children: React.ReactNode }) {
           );
 }
 
-export default function ProjectsDetails({ project }: { project: Project }) {
+export default function ProjectsDetails({
+          project,
+}: {
+          project: Project;
+}): React.JSX.Element {
           return (
                     <section className="mx-auto w-full max-w-[1100px] px-7 pb-24 pt-28 md:px-10">
                               {/* Back Link */}
@@ -32,7 +38,8 @@ export default function ProjectsDetails({ project }: { project: Project }) {
                               </Link>
 
                               {/* Hero Image */}
-                              <div className="relative mt-6 aspect-[16/7] w-full overflow-hidden rounded-2xl border shadow-2xl"
+                              <div
+                                        className="relative mt-6 aspect-[16/7] w-full overflow-hidden rounded-2xl border shadow-2xl"
                                         style={{ borderColor: "var(--border-color)" }}
                               >
                                         <Image
@@ -97,7 +104,7 @@ export default function ProjectsDetails({ project }: { project: Project }) {
                               </div>
 
                               {/* Description */}
-                              <DetailHeading >Description</DetailHeading>
+                              <DetailHeading>Description</DetailHeading>
 
                               <p
                                         className="mt-3 text-sm leading-7"

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+
 import {
           Mail,
           Phone,
@@ -10,10 +11,22 @@ import {
           ArrowUp,
           Heart,
 } from "lucide-react";
+
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { useTheme } from "../ThemeProvider";
 
-const Footer = () => {
+type QuickLink = {
+          name: string;
+          href: string;
+};
+
+type SocialLink = {
+          name: string;
+          href: string;
+          icon: React.ReactNode;
+};
+
+const Footer = (): React.JSX.Element => {
           const { theme } = useTheme();
           const isDark = theme === "dark";
 
@@ -23,7 +36,7 @@ const Footer = () => {
                     setYear(new Date().getFullYear());
           }, []);
 
-          const quickLinks = [
+          const quickLinks: QuickLink[] = [
                     { name: "About", href: "#about" },
                     { name: "Skills", href: "#skills" },
                     { name: "Education", href: "#education" },
@@ -33,7 +46,7 @@ const Footer = () => {
                     { name: "Contact", href: "#contact" },
           ];
 
-          const socialLinks = [
+          const socialLinks: SocialLink[] = [
                     {
                               name: "GitHub",
                               href: "https://github.com/prokash4433",
@@ -100,13 +113,13 @@ const Footer = () => {
                                                             </div>
                                                   </div>
 
-                    {/* Quick Links */}
-<div>
-<h3
-className={`mb-4 text-xl font-bold ${isDark ? "text-white" : "text-gray-900"
+                                                  {/* Quick Links */}
+                                                  <div>
+                                                            <h3
+                                                                      className={`mb-4 text-xl font-bold ${isDark ? "text-white" : "text-gray-900"
                                                                                 }`}
-          >
-          Quick Links
+                                                            >
+                                                                      Quick Links
                                                             </h3>
 
                                                             <ul className="space-y-2">
@@ -182,9 +195,7 @@ className={`mb-4 text-xl font-bold ${isDark ? "text-white" : "text-gray-900"
                                                   className={`flex flex-col items-center justify-between gap-4 border-t py-5 text-center text-xs sm:flex-row sm:text-left ${isDark ? "border-white/10" : "border-gray-200"
                                                             }`}
                                         >
-                                                  <p>
-                                                            © {year ?? 2026} Prokash Das. All rights reserved.
-                                                  </p>
+                                                  <p>© {year ?? 2026} Prokash Das. All rights reserved.</p>
 
                                                   <p className="flex items-center gap-1">
                                                             Designed &amp; built with

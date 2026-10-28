@@ -1,4 +1,3 @@
- 
 "use client";
 
 import Image from "next/image";
@@ -13,7 +12,7 @@ import {
 
 import { FiDownload } from "react-icons/fi";
 
-export default function Banner() {
+export default function Banner(): React.JSX.Element {
   return (
     <section
       id="home"
@@ -34,7 +33,6 @@ export default function Banner() {
 
       {/* Main Content */}
       <div className="relative z-10 mx-auto grid min-h-[420px] max-w-[1120px] grid-cols-1 items-center gap-10 px-7 pb-12 pt-28 md:grid-cols-2 md:px-10 md:pb-8 md:pt-20">
-
         {/* Left Content */}
         <div className="relative z-20">
           <p className="mb-2 text-sm font-medium text-[#7770e9]">
@@ -154,7 +152,6 @@ export default function Banner() {
 
         {/* Right Profile Image */}
         <div className="relative flex min-h-[320px] items-center justify-center md:min-h-[360px]">
-
           {/* Soft Background Glow */}
           <div className="pointer-events-none absolute h-[280px] w-[240px] rounded-full bg-[#6554d9]/10 blur-[50px] md:h-[320px] md:w-[280px]" />
 
@@ -183,10 +180,8 @@ export default function Banner() {
           <div className="absolute right-[12%] top-[10%] h-3 w-3 rounded-full bg-[#8278ff]/60 blur-[1px]" />
 
           <div className="absolute bottom-[10%] left-[12%] h-2 w-2 rounded-full bg-[#a34fe3]/70" />
-
         </div>
       </div>
     </section>
   );
 }
- 

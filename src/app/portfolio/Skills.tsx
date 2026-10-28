@@ -1,4 +1,3 @@
-
 import {
           FaHtml5,
           FaReact,
@@ -7,11 +6,17 @@ import {
           FaLeaf,
           FaLock,
 } from "react-icons/fa";
+
 import { SiTailwindcss } from "react-icons/si";
 import { TbCode } from "react-icons/tb";
 
-const Skills = () => {
-          const frontendSkills = [
+type Skill = {
+          name: string;
+          icon: React.ReactNode;
+};
+
+const Skills = (): React.JSX.Element => {
+          const frontendSkills: Skill[] = [
                     {
                               name: "HTML5",
                               icon: <FaHtml5 className="text-xl text-[#F04E30]" />,
@@ -50,7 +55,7 @@ const Skills = () => {
                     },
           ];
 
-          const backendSkills = [
+          const backendSkills: Skill[] = [
                     {
                               name: "Node.js",
                               icon: <FaNodeJs className="text-xl text-[#5FAF4E]" />,

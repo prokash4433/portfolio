@@ -1,4 +1,4 @@
- 
+
 "use client";
 
 import {
@@ -27,6 +27,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
     if (savedTheme === "light" || savedTheme === "dark") {
       setTheme(savedTheme);
+      document.documentElement.dataset.theme = savedTheme;
+    } else {
+      document.documentElement.dataset.theme = "dark";
     }
 
     setMounted(true);
@@ -61,4 +64,3 @@ export function useTheme() {
 
   return context;
 }
- 

@@ -1,49 +1,117 @@
- 
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-/* Dark Theme - Default */
+/* ================================
+   DARK THEME
+================================ */
 :root,
 :root[data-theme="dark"] {
   color-scheme: dark;
 
-  --page-bg: #070719;
-  --section-bg: #101735;
-  
+  --page-gradient: linear-gradient(
+    135deg,
+    #0d061a 0%,
+    #120a2a 50%,
+    #07040d 100%
+  );
+
+  --section-bg: rgba(16, 12, 35, 0.76);
+  --card-bg: rgba(27, 22, 49, 0.88);
+  --chip-bg: rgba(18, 16, 37, 0.92);
+
   --text-color: #ffffff;
   --muted-text: #c0c5d9;
-  --border-color: rgba(255, 255, 255, 0.1);
+  --heading-color: #f5f5ff;
+  --border-color: rgba(255, 255, 255, 0.12);
+
+  --accent-color: #8278ff;
+  --accent-hover: #a59aff;
 }
 
-/* Light Theme */
+/* ================================
+   LIGHT THEME
+================================ */
 :root[data-theme="light"] {
   color-scheme: light;
 
-  --page-bg: #f4f6fc;
-  --section-bg: #ffffff;
-  --card-bg: #e9edfa;
-  --text-color: #171b2e;
-  --muted-text: #505a72;
-  --border-color: rgba(20, 30, 60, 0.15);
+  --page-gradient: linear-gradient(
+    135deg,
+    #f5f0ff 0%,
+    #ffffff 50%,
+    #eee7ff 100%
+  );
+
+  --section-bg: rgba(255, 255, 255, 0.72);
+  --card-bg: rgba(255, 255, 255, 0.88);
+  --chip-bg: rgba(246, 243, 255, 0.95);
+
+  --text-color: #25213a;
+  --muted-text: #625d78;
+  --heading-color: #171329;
+  --border-color: rgba(73, 55, 120, 0.16);
+
+  --accent-color: #6554d9;
+  --accent-hover: #5140c2;
 }
 
-/* Global Background and Text */
-html,
-body {
+/* ================================
+   GLOBAL BACKGROUND
+================================ */
+html {
   min-height: 100%;
-  background-color: var(--page-bg);
+  background: var(--page-gradient);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page-gradient);
+  background-attachment: fixed;
   color: var(--text-color);
 
   transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* Keep the gradient visible behind the page */
+#__next {
+  min-height: 100vh;
+}
+
+/* Theme transitions */
+body,
+nav,
+section,
+article,
+button,
+a,
+div {
+  transition:
     background-color 0.3s ease,
+    border-color 0.3s ease,
     color 0.3s ease;
 }
 
-/* Smooth Theme Transition */
-body {
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+/* Prevent anchor headings from hiding under the navbar */
+section[id] {
+  scroll-margin-top: 80px;
 }
- 
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

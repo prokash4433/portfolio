@@ -1,27 +1,49 @@
-import React from "react";
 import Banner from "./portfolio/Banner";
- 
 import AboutMe from "./portfolio/AboutMe";
+import Skills from "./portfolio/Skills";
+import Education from "./portfolio/Education";
 
 export default function PortfolioPage() {
   return (
-    <div
-      className="min-h-screen p-4 transition-colors duration-300 md:p-8"
-      style={{ backgroundColor: "var(--page-bg)" }}
-    >
+    <div className="min-h-screen bg-transparent p-4 text-[var(--text-color)] transition-colors duration-300 md:p-8">
+      {/* Hero Section */}
       <div
         className="mx-auto mt-20 max-w-7xl rounded-[2.5rem] border px-5 py-5 shadow-2xl transition-colors duration-300 md:px-10 md:py-8"
         style={{
-         
+          backgroundColor: "var(--section-bg)",
           borderColor: "var(--border-color)",
+          boxShadow: "var(--card-shadow)",
         }}
       >
         <Banner />
-        
       </div>
-      <div>
+
+      {/* About Section */}
+      <section id="about" className="bg-transparent">
         <AboutMe />
-      </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="bg-transparent">
+        <Skills />
+      </section>
+
+        {/* Education Section */}
+
+        <section>
+          <Education/>
+        </section>
+
+      {/* Add More Sections Here */}
+      {/*
+        <section id="projects">
+          <Projects />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+      */}
     </div>
   );
 }

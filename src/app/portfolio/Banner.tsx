@@ -66,17 +66,7 @@ export default function Banner(): React.JSX.Element {
 
           {/* Action Buttons */}
           <div className="mt-5 flex flex-wrap items-center gap-3">
-            {/* <a
-              href="/resume.pdf"
-              download="Prokash-Das-Resume.pdf"
-              className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-[#6254d9] to-[#8244d7] px-4 py-2.5 text-xs font-semibold text-white shadow-lg shadow-[#6554d9]/20 transition hover:-translate-y-0.5 hover:brightness-110"
-            >
-              <FiDownload size={14} />
-              Download Resume
-            </a> */}
-
-             
-            <a
+          <a
               href="https://drive.google.com/uc?export=download&id=1tu94bN9M8WklTbjN3Osc2pXQr-3l_UvC&filename=Prokash-Das-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"

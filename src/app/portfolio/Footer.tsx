@@ -37,13 +37,12 @@ const Footer = (): React.JSX.Element => {
           }, []);
 
           const quickLinks: QuickLink[] = [
-                    { name: "About", href: "#about" },
-                    { name: "Skills", href: "#skills" },
-                    { name: "Education", href: "#education" },
-                    { name: "Experience", href: "#experience" },
-                    { name: "Self-Employed", href: "#self-employed" },
-                    { name: "Projects", href: "#projects" },
-                    { name: "Contact", href: "#contact" },
+                    { name: "About", href: "/#about" },
+                    { name: "Skills", href: "/#skills" },
+                    { name: "Education", href: "/#education" },
+                    { name: "Experience", href: "/#experience" },
+                    { name: "Projects", href: "#/projects" },
+                    { name: "Contact", href: "#/contact" },
           ];
 
           const socialLinks: SocialLink[] = [
@@ -198,7 +197,7 @@ const Footer = (): React.JSX.Element => {
                                                   <p>© {year ?? 2026} Prokash Das. All rights reserved.</p>
 
                                                   <p className="flex items-center gap-1">
-                                                            Designed &amp; built with
+                                                            Designed &amp; built Prokash
                                                             <Heart
                                                                       size={13}
                                                                       className="fill-pink-500 text-pink-500"

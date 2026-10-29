@@ -7,18 +7,20 @@ import { useTheme } from "../ThemeProvider";
 
 type NavLink = {
   name: string;
-  href: `#${string}`;
+  href: `/${string}` | `#${string}`;
 };
 
+ 
 const navLinks: NavLink[] = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Education", href: "#education" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
-  { name: "Footer", href: "#footer" },
+  { name: "Home", href: "/#home" },
+  { name: "About", href: "/#about" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Education", href: "/#education" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Contact", href: "/#contact" },
+  { name: "Footer", href: "/#footer" },
 ];
+ 
 
 export default function Navbar(): React.JSX.Element {
   const { theme, toggleTheme } = useTheme();
@@ -39,7 +41,7 @@ export default function Navbar(): React.JSX.Element {
       <div className="mx-auto flex h-16 max-w-[1120px] items-center justify-between gap-3 px-4 sm:px-6 md:px-10">
         {/* Logo */}
         <Link
-          href="#home"
+          href="/#home"
           onClick={closeMenu}
           className="shrink-0 text-xl font-bold tracking-tight sm:text-[22px]"
           style={{ color: "var(--accent-color)" }}
